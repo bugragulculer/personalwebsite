@@ -1,0 +1,33 @@
+iframe {
+  width: 80%;
+  margin-top: 10px;
+}
+
+.two-section {
+  background-color: #eee;
+  margin: 10p;
+  margin-right: 5px;
+  margin-left: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1100px) {
+  .two-section {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+}
+
+h4 {
+  font-size: 16px;
+  font-style: normal;
+}

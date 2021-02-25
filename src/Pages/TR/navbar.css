@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.navbar {
+  height: 70px;
+  display: flex;
+  background-color: #eee;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  z-index: 150;
+}
+
+.navbar-container {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 2000px;
+}
+
+.navbar-logo {
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  margin: 10px;
+  padding-top: 10px;
+  transition: all 0.4s ease-out;
+}
+
+.navbar-main-logo {
+  height: 60px;
+  margin: 0px 0px;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-menu-item {
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 8px;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 30px;
+  transition: all 0.4s ease-out;
+}
+
+.item {
+  font-size: 14px;
+  text-decoration: none;
+  color: #242424;
+  align-self: center;
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.menu-item {
+  display: none;
+}
+
+.footeritem {
+  display: none;
+  text-decoration: none;
+  color: #242424;
+  width: 0px;
+}
+
+.trsite {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  text-decoration: underline;
+  color: #242424;
+  text-decoration: none;
+  margin: 0px 40px;
+}
+
+.lang_menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-menu-item:hover {
+  background-color: #ccc;
+  border-radius: 5px;
+  transition: all 0.4s ease-out;
+}
+
+.navbar-logo:hover {
+  -webkit-filter: drop-shadow(2px 2px 6px #999);
+  filter: drop-shadow(2px 2px 6px #999);
+  transition: all 0.4s ease-out;
+}
+
+.nav-menu-item:active {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar {
+    margin-top: 0px;
+    height: 70px;
+  }
+  .navbar-container {
+    align-items: center;
+    height: 70px;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #ccc;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    opacity: 0.95;
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  .item,
+  .footeritem {
+    text-align: center;
+    align-content: center;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    height: 40px;
+    width: 100%;
+    display: table;
+    font-size: 20px;
+  }
+
+  .footeritem {
+    color: #6e160e;
+    font-weight: 600;
+  }
+  .nav-menu-item {
+    padding: 20px;
+  }
+  .nav-menu-item:hover {
+    background-color: #bbb;
+    color: #242424;
+    border-radius: 5px;
+  }
+
+  .navbar-logo {
+    align-self: center;
+    justify-self: center;
+    height: 70px;
+    margin: 10px;
+    padding-top: 15px;
+  }
+
+  .menu-icon {
+    display: contents;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #242424;
+    font-size: 2rem;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    height: 140px;
+  }
+
+  .navbar-logo {
+    height: 80px;
+  }
+  .navbar-container {
+    flex-direction: column;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: stretch;
+    width: 100%;
+    height: 70vh;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 90px;
+  }
+  .lang_menu {
+    height: 50px;
+    flex-direction: stretch;
+  }
+
+  .trsite {
+    margin: 0px;
+    margin-right: 20px;
+    height: 32px;
+    width: 80px;
+  }
+  .menu-icon {
+    width: 50px;
+  }
+
+  .nav-menu.active {
+    margin-top: 90px;
+  }
+}

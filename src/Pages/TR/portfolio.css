@@ -1,0 +1,228 @@
+.portfolio_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.portfolio_header_h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  padding: 20px 30px;
+  line-height: 50px;
+}
+
+.portfolio_header_img {
+  background-color: #c95c52;
+  height: 400px;
+  border-radius: 200px;
+  border-style: solid;
+  border-color: #aaa;
+}
+
+.portfolio_item {
+  margin-top: 20px;
+  padding-bottom: 40px;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio_item_h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  padding: 30px 30px;
+}
+
+.portfolio_talent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.talent {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 20px;
+  height: 900px;
+}
+.talent_icon {
+  height: 125px;
+  margin: 25px;
+  -webkit-filter: drop-shadow(2px 2px 4px #ccc);
+  filter: drop-shadow(2px 2px 4px #ccc);
+  transition: all 0.4s ease-out;
+}
+
+.talent_h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  color: #c95c52;
+}
+
+.talent_p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.talent_h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  color: #c95c52;
+}
+
+.talent_list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  list-style-type: none;
+  height: 240px;
+  padding: 20px;
+  outline: #242424;
+}
+
+.talent_list_item {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
+  padding: 7px 0px;
+  margin: 0px;
+}
+
+.portfolio_item {
+  margin: 20px 0px;
+}
+
+.portfolio_flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio_half {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio_img {
+  width: 100%;
+  box-shadow: 2px 2px 8px #999;
+  transition: all 0.4s ease-out;
+}
+
+.portfolio_h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
+  padding: 7px 0px;
+  margin: 0px;
+  padding-top: 40px;
+}
+
+.portfolio_h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
+}
+
+.portfolio_p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 10%;
+}
+
+.portfolio_url {
+  color: #c95c52;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
+}
+
+.portfolio_img:hover {
+  box-shadow: 4px 4px 12px #999;
+  transform: translate(-2px, -2px);
+  transition: all 0.4s ease-out;
+}
+.talent_icon:hover {
+  height: 125px;
+  margin: 25px;
+  -webkit-filter: drop-shadow(4px 4px 9px #ccc);
+  filter: drop-shadow(4px 4px 8px #ccc);
+  transition: all 0.4s ease-out;
+  transform: translate(-2px, -2px);
+}
+
+@media screen and (max-width: 1100px) {
+  .portfolio_header {
+    padding-top: 30px;
+  }
+
+  .portfolio_header_img {
+    height: 200px;
+  }
+  .portfolio_header_h1 {
+    font-size: 40px;
+  }
+
+  .portfolio_talent {
+    flex-direction: column;
+  }
+
+  .talent {
+    width: 90%;
+  }
+
+  .portfolio_flex {
+    flex-direction: column;
+  }
+
+  .portfolio_half {
+    width: 90%;
+  }
+}

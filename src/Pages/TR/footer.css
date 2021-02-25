@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.Footer {
+  padding-top: 40px;
+  margin-top: 0px;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.FooterColumns {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 1200px;
+  justify-content: center;
+  margin-left: -35px;
+}
+
+.Footercolumn {
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.FooterMenu {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  justify-content: center;
+}
+.FooterMenuItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.item {
+  text-align: center;
+  justify-self: center;
+  padding: 5px 0px;
+  margin: 2px 0px;
+  width: 100%;
+  transition: all 0.4s ease-out;
+}
+
+.Follow {
+  color: #242424;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  justify-content: center;
+  align-content: center;
+}
+
+.SocialAccounts {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+.Logo {
+  transition: all 0.4s ease-out;
+  align-items: center;
+  justify-content: center;
+}
+.bugra_Logo {
+  width: 300px;
+}
+.bugra_Logo:hover {
+  -webkit-filter: drop-shadow(2px 2px 6px #ccc);
+  filter: drop-shadow(2px 2px 6px #ccc);
+  transition: all 0.4s ease-out;
+}
+.Social {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  align-items: center;
+  justify-items: center;
+}
+
+.SocialLogo {
+  width: 35px;
+  object-fit: contain;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+}
+
+.SocialText {
+  color: #242424;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-align: start;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.Copyright {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.SocialLogo:hover {
+  -webkit-filter: drop-shadow(2px 2px 6px #ccc);
+  filter: drop-shadow(2px 2px 6px #ccc);
+}
+
+.FooterMenuItem:hover {
+  text-shadow: 2px 2px 4px #ccc;
+  background-color: #ccc;
+  border-radius: 4px;
+  transition: all 0.4s ease-out;
+}
+
+@media screen and (max-width: 1100px) {
+  .Footer {
+    margin-top: 0px;
+    background-color: #eee;
+    height: 100%;
+  }
+  .FooterColumns {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-right: 4%;
+    margin-left: 4%;
+  }
+  .Footercolumn {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+  }
+  .FooterMenu {
+    margin: 0px;
+    padding: 0px;
+  }
+  .FooterMenuItem {
+    margin: 0px;
+  }
+  .item,
+  .footeritem {
+    font-size: 14px;
+  }
+  .Follow {
+    display: none;
+  }
+
+  .SocialAccounts {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  .Social {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Copyright {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    padding: 10px 0px;
+  }
+}

@@ -1,0 +1,134 @@
+.notion_header {
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  background-color: #eb5757;
+}
+
+.notion_header_half {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.notion_header_h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 80px;
+  color: #fff;
+  text-shadow: 4px 4px 8px RGBA(36, 36, 36, 0.3);
+  text-align: right;
+  padding-right: 30px;
+}
+
+.notion_header_h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  color: #fff;
+  text-align: right;
+  line-height: 50px;
+  text-shadow: 4px 4px 8px RGBA(36, 36, 36, 0.3);
+  padding-right: 30px;
+}
+
+.notion_header_h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  padding-right: 30px;
+  padding-left: 100px;
+  text-align: right;
+  color: #fff;
+  text-shadow: 4px 4px 8px RGBA(36, 36, 36, 0.3);
+}
+
+.notion_header_image {
+  max-height: 800px;
+  max-width: 900px;
+}
+
+.notion_notice {
+  background-color: #f9f5f1;
+  margin-top: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notion_notice_desc {
+  display: flex;
+  flex-direction: row;
+}
+.notion_notice_desc_i {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #242424;
+  font-style: italic;
+}
+@media screen and (max-width: 1100px) {
+  .notion_header {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .notion_header_half {
+    width: 95%;
+    object-fit: contain;
+  }
+
+  .notion_header_h1 {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .notion_header_h2 {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .notion_header_h3 {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+
+    text-align: center;
+  }
+
+  .notion_header_image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .notion_notice_desc_i {
+    font-size: 14px;
+  }
+  .notion_notice_header {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .notion_notice_desc_i {
+    font-size: 13px;
+  }
+  .notion_notice_header {
+    font-size: 30px;
+    text-align: center;
+  }
+}
