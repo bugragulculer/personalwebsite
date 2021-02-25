@@ -29,69 +29,69 @@ const Setup = () => {
                 <Home />
                 <Footer/>
             </Route>
-            <Route exact path='/blog'>
+            <Route path='/blog'>
                 <Navbar />
                 <Blog />
                 <Footer/>
             </Route>
-            <Route exact path='/newsletter'>
+            <Route path='/newsletter'>
                 <Navbar />
                 <Newsletter />
                 <Footer/>
             </Route>                
-            <Route exact path='/portfolio'>
+            <Route path='/portfolio'>
                 <Navbar />
                 <Portfolio />
                 <Footer/>
             </Route>                
-            <Route exact path='/podcast'>
+            <Route path='/podcast'>
                 <Navbar />
                 <Podcast />
                 <Footer/>
             </Route>
-            <Route exact path='/notion'>
+            <Route path='/notion'>
                 <Navbar />
                 <Notion />
                 <Footer/>
             </Route>
-            <Route exact exact path='/tr'>
+            <Route exact path='/tr'>
                 <Navbar_TR/>
                 <Home_TR />
                 <Footer_TR />
             </Route>
-            <Route exact path='/tr/blog'>
+            <Route path='/tr/blog'>
                 <Navbar_TR/>
                 <Blog_TR />
                 <Footer_TR />
 
             </Route>
-            <Route exact path='/tr/bulten'>
+            <Route path='/tr/bulten'>
                 <Navbar_TR/>
                 <Newsletter_TR />
                 <Footer_TR />
 
             </Route>
-            <Route exact path='/tr/portfolyo'>
+            <Route path='/tr/portfolyo'>
                 <Navbar_TR/>
                 <Portfolio_TR />
                 <Footer_TR />
 
             </Route>                
-            <Route exact path='/tr/podcast'>
+            <Route path='/tr/podcast'>
                 <Navbar_TR/>
                 <Podcast_TR />
                 <Footer_TR />
 
             </Route>
-            <Route exact path='/tr/notion'>
+            <Route path='/tr/notion'>
                 <Navbar_TR/>
                 <Notion_TR />
                 <Footer_TR />
             </Route>
-            <Route exact path='/tr/*'>
+            <Route path='/tr/*'>
                 <Error_TR/>
             </Route>
-            <Route exact path='*'>
+            <Route path='*'>
                 <Error />
             </Route>
         </Switch>
